@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>CDP | Payment Indexer</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="view" style="float: left; width: 40%; height: 90vh">
+        <div>
+          <h3>Latest Ledgers</h3>
+        </div>
+        <div id="ledgers">
+        </div>
+
+      </div>
+      <div id="controls" style="float: left; margin-top: 1em">
+        <label>Ledger: <input id="ledgerNum" type="number"></label>
+        <button id="load">Load Ledger</button>
+        <!-- <label>Stream Ledgers? <input type="checkbox" id="toggleStream"></label> -->
+        <button id="stopStream">Stop Streaming</button>
+        <button id="startStream">Start Streaming</button>
+        <div>
+          <p><b>Filters:</b></p>
+          <ul id="filters">
+          </ul>
+        </div>
+        <label>Address: <input id="filter" type="text" /></label>
+        <p><button id="addFilter">Add Filter</button></p>
+        <p>
+          AQUA issuer: <span class="address">
+            GBNZILSTVQZ4R7IKQDGHYGY2QXL5QOFJYQMXPKWRRM5PAV7Y4M67AQUA
+          </span>
+        </p>
+        <p>
+          USDC issuer: <span class="address">
+            GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN</span>
+        </p>
+        <p>
+          BTC issuer: <span class="address">
+            GDPJALI4AZKUU2W426U5WKMAT6CN3AJRPIIRYR2YM54TL2GDWO5O2MZM</span>
+        </p>
+        <p>
+          ARST issuer: <span class="address">
+            GCSAZVWXZKWS4XS223M5F54H2B6XPIIXZZGP7KEAIU6YSL5HDRGCI3DG</span>
+        </p>
+        <p>
+          SDF 4: <span class="address">
+            GAPV2C4BTHXPL2IVYDXJ5PUU7Q3LAXU7OAQDP7KVYHLCNM2JTAJNOQQI
+          </span>
+        </p>
+
+        <p>
+          SDF 5: <span class="address">
+            GAKGC35HMNB7A3Q2V5SQU6VJC2JFTZB6I7ZW77SJSMRCOX2ZFBGJOCHH
+          </span>
+        </p>
+        <p>
+          Burn ledger: 53998087
+        </p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
